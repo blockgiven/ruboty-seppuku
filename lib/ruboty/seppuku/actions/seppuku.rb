@@ -17,7 +17,7 @@ module Ruboty
         end
 
         def heroku?
-          heroku_api_key and heroku_app_name
+          heroku_api_key and heroku_app_name and ENV['DYNO']
         end
 
         def heroku_app_name
